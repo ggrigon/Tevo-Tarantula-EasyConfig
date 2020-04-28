@@ -28,7 +28,7 @@
 
 ***********************************************************************/
 
-#define PRINTER_NAME "RIGON TEVO Tarantula (EasyConfig)"  // Change this to whatever you wish, or leave it as it is.
+#define PRINTER_NAME "RIGON 3D"  // Change this to whatever you wish, or leave it as it is.
                                                     // NOTE: Whatever you put here will have " Ready..." appended to it.
 
 /**
@@ -68,7 +68,7 @@
  * (How to calibrate: https://toms3d.org/2014/04/06/3d-printing-guides-calibrating-your-extruder/)
  */
 #define E0_STEPS      444 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate. //RIGON
-//#define CHANGE_E0_DIRECTION   // If your extruder is going backwards, enable this.
+#define CHANGE_E0_DIRECTION   // If your extruder is going backwards, enable this.
 
 /**
  * Z Axis steps per mm (Default for stock lead screw is 1600)
@@ -85,7 +85,7 @@
 //#define INDUCTIVE_NO  // Normally open inductive sensor
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
 //#define SERVO_PROBE   // Endstop switch on rotating arm. Set servo angles!
-//#define NOZZLE_PROBE	// Nozzle wired up to contact metal on bed
+//#define NOZZLE_PROBE  // Nozzle wired up to contact metal on bed
 
 /**
  * Bed leveling type (see: https://github.com/JimBrown/MarlinTarantula/wiki/Bed-leveling-types-(EasyConfig))
@@ -148,8 +148,8 @@
  * Secondary Extruder steps per mm
  * (how to calibrate: https://toms3d.org/2014/04/06/3d-printing-guides-calibrating-your-extruder/)
  */
-#define E1_STEPS      100 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate
-//#define CHANGE_E1_DIRECTION   // If your secondary extruder is going backwards, enable this.
+#define E1_STEPS      444 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate
+#define CHANGE_E1_DIRECTION   // If your secondary extruder is going backwards, enable this.
 
 /**
  * TEVO Tarantula Custom PID Settings - Stock Hotend
@@ -191,10 +191,10 @@
 #define Hot_PLA     215
 #define Bed_PLA      75
 
-#define Hot_ABS 		240
-#define Bed_ABS 		100
+#define Hot_ABS     240
+#define Bed_ABS     100
 
-#define Hot_PETG 		230
+#define Hot_PETG    230
 #define Bed_PETG     80
 
 /**
@@ -1336,7 +1336,7 @@
 #define Z_CLEARANCE_DEPLOY_PROBE    Z_HOMING_HEIGHT // Z Clearance for Deploy/Stow
 #define Z_CLEARANCE_BETWEEN_PROBES  Z_HOMING_HEIGHT // Z Clearance between probe points
 #define Z_CLEARANCE_MULTI_PROBE     Z_HOMING_HEIGHT // Z Clearance between multiple probes
-#define Z_AFTER_PROBING           	Z_HOMING_HEIGHT // Z position after probing is done
+#define Z_AFTER_PROBING             Z_HOMING_HEIGHT // Z position after probing is done
 
 #define Z_PROBE_LOW_POINT          -2 // Farthest distance below the trigger-point to go before stopping
 
