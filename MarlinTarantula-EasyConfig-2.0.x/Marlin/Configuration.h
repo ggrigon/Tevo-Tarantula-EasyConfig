@@ -80,8 +80,8 @@
  * Z-Probe type (must be none or one of them)
  * If a Z-Probe type is selected, a Bed Leveling type other than MANUAL must be selected.
  */
-#define BLTOUCH       // ANTClabs BLTouch sensor (might also work with clones) //RIGON
-//#define SN04          // Green sensor
+//#define BLTOUCH       // ANTClabs BLTouch sensor (might also work with clones)
+#define SN04          // Green sensor //RIGON
 //#define INDUCTIVE_NO  // Normally open inductive sensor
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
 //#define SERVO_PROBE   // Endstop switch on rotating arm. Set servo angles!
@@ -103,7 +103,7 @@
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
 #define SENSOR_LEFT        0
-#define SENSOR_RIGHT       0
+#define SENSOR_RIGHT       50
 #define SENSOR_FRONT       0
 #define SENSOR_BEHIND      0
 
@@ -148,8 +148,8 @@
  * Secondary Extruder steps per mm
  * (how to calibrate: https://toms3d.org/2014/04/06/3d-printing-guides-calibrating-your-extruder/)
  */
-#define E1_STEPS      444 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate
-#define CHANGE_E1_DIRECTION   // If your secondary extruder is going backwards, enable this.
+//#define E1_STEPS      444 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate
+//#define CHANGE_E1_DIRECTION   // If your secondary extruder is going backwards, enable this.
 
 /**
  * TEVO Tarantula Custom PID Settings - Stock Hotend
