@@ -55,8 +55,8 @@
  * Offset from endpoints to get nozzle to 0,0 (front/left of bed)
  * (How to center prints: https://github.com/JimBrown/MarlinTarantula/wiki/How-to-center-your-prints-(EasyConfig))
  */
-#define NOZZLE_X          0
-#define NOZZLE_Y          0
+#define NOZZLE_X          39
+#define NOZZLE_Y          -8
 
 /**
  * Minimal Z height (in mm) before homing (G28) for Z clearance above the bed, clamps, ...
@@ -103,7 +103,7 @@
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
 #define SENSOR_LEFT        0
-#define SENSOR_RIGHT       50
+#define SENSOR_RIGHT       0
 #define SENSOR_FRONT       0
 #define SENSOR_BEHIND      0
 
@@ -116,7 +116,7 @@
 /**
  * Margin around perimiter of bed for probing (will not probe outside this margin)
  */
-#define BED_MARGIN         30 //RIGON
+#define BED_MARGIN         15 //RIGON
 
 /**
  * Servo probe deploy and stow angles
